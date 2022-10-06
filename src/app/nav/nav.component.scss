@@ -34,3 +34,20 @@ header {
     color: var(--yellow);
     transition: 0.3s;
 }
+
+.icon{
+    display: none;
+}
+
+
+@media (max-width: 960px) {
+    .icon{
+        display: block;
+        justify-self: right;
+        cursor: pointer;
+    }
+
+    nav{
+        display: none;
+    }
+}

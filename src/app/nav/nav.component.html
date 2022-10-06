@@ -9,5 +9,14 @@
                 <li><a routerLink="/about" routerLinkActive="active">About</a></li>
             </ul>
         </nav>
+        <button class="icon" (click)="showDetails()">&#9776;</button>
+        <ng-container *ngIf="isShow">
+            <div class="mobile">
+                <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+                <a routerLink="/volumes" routerLinkActive="active">Volumes</a>
+                <a routerLink="/characters" routerLinkActive="active">Characters</a>
+                <a routerLink="/about" routerLinkActive="active">About</a>
+            </div>
+        </ng-container>
     </div>
 </header>
