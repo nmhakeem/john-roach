@@ -37,14 +37,21 @@ header {
 
 .icon{
     display: none;
+    justify-self: right;
+    cursor: pointer;
+    background: var(--yellow);
+    border: none;
+    border-radius: 2px;
+    width: 40px;
+    &:hover{
+        background-color: #fac929;
+    }
 }
 
 
 @media (max-width: 960px) {
     .icon{
         display: block;
-        justify-self: right;
-        cursor: pointer;
     }
 
     nav{
