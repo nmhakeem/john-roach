@@ -13,4 +13,8 @@ export class VolumesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showVolume(){
+    console.log("volume is opening");
+  }
+
 }
