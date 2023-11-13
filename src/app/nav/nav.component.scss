@@ -34,3 +34,27 @@ header {
     color: var(--yellow);
     transition: 0.3s;
 }
+
+.icon{
+    display: none;
+    justify-self: right;
+    cursor: pointer;
+    background: var(--yellow);
+    border: none;
+    border-radius: 2px;
+    width: 40px;
+    &:hover{
+        background-color: #fac929;
+    }
+}
+
+
+@media (max-width: 960px) {
+    .icon{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+}

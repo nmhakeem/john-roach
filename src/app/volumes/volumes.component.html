@@ -1,1 +1,46 @@
-<p>volumes works!</p>
+<head>
+    <title>John Roach - Volumes</title>
+</head>
+<div class="heading">
+    <h1>Volumes</h1>
+    <div class="description">
+        <p>{{description}}</p>
+    </div>
+</div>
+<div class="card-section">
+    <div class="vol-card" (click)="showVolume()">
+        <div class="vol-img">VOL 1</div>
+        <div class="vol-detail">
+            <p class="vol-volume">Volume 1</p>
+            <h2 class="vol-title">Pilot</h2>
+            <p class="vol-desc">John Roach appears in the EntoVerse! How will he measure up to this world?</p>
+        </div> 
+    </div>
+    <div class="vol-card" (click)="showVolume()">
+        <div class="vol-img">VOL 2</div>
+        <div class="vol-detail">
+            <p class="vol-volume stack">Volume 2</p>
+            <h2 class="vol-title stack">Danger Ahead!</h2>
+            <p class="vol-desc stack">With newfound trust of the locals, John Roach faces a threat head on!</p>
+        </div> 
+    </div>
+    <div class="vol-card" (click)="showVolume()">
+        <div class="vol-img">VOL 3</div>
+        <div class="vol-detail">
+            <p class="vol-volume">Volume 3</p>
+            <h2 class="vol-title">The Scarab King</h2>
+            <p class="vol-desc">A new foe rallies against John Roach, can he thwart them?</p>
+        </div> 
+    </div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Some text in the Modal..</p>
+    </div>
+  
+  </div>
