@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-volumes',
-  templateUrl: './volumes.component.html',
-  styleUrls: ['./volumes.component.scss']
+  selector: 'app-chapters',
+  templateUrl: './chapters.component.html',
+  styleUrls: ['./chapters.component.scss']
 })
-export class VolumesComponent implements OnInit {
+export class ChaptersComponent implements OnInit {
 
   description = "Here you can catch up with John Roach and his latest adventures! Be sure to check back for new pages to drop!";
   constructor() { }
@@ -13,8 +13,8 @@ export class VolumesComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  showVolume(){
-    console.log("volume is opening");
+  showChapter(){
+    console.log("chapter is opening");
   }
 
 }

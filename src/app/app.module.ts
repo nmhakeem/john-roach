@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
-import { VolumesComponent } from './volumes/volumes.component';
+import { ChaptersComponent } from './chapters/chapters.component';
 import { CharactersComponent } from './characters/characters.component';
 import { AboutComponent } from './about/about.component';
 
@@ -14,7 +14,7 @@ import { AboutComponent } from './about/about.component';
     AppComponent,
     NavComponent,
     HomeComponent,
-    VolumesComponent,
+    ChaptersComponent,
     CharactersComponent,
     AboutComponent
   ],

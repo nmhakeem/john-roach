@@ -8,7 +8,7 @@
     //grid-auto-rows: minmax(auto, auto);
 }
 
-.vol-card{
+.cha-card{
     border-radius: .6em;
     //box-shadow: 0px 2px 5px 1px rgba($color: black, $alpha: .2);
     //border-bottom: 10px solid #daad18;
@@ -29,7 +29,7 @@
     }
 }
 
-.vol-img{
+.cha-img{
     background: var(--yellow);
     width: 40%;
     height: 100%;
@@ -38,7 +38,7 @@
     float: left;
 }
 
-.vol-detail{
+.cha-detail{
     display: inline-block;
     width: 55%;
     padding-right: 0.5em;
@@ -49,7 +49,7 @@
     //background: cyan;
 }
 
-.vol-volume .vol-title .vol-desc{
+.cha-chapter .cha-title .cha-desc{
     margin-bottom: 0.5 em;
     overflow: hidden;
     text-overflow: ellipsis;
