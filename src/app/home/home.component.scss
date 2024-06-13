@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    /*height: 100vh; /* Ensure the page takes the full viewport height */
+    margin: 0; /* Remove default body margin */
+}
+
+.center {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+}

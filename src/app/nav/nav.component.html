@@ -4,10 +4,19 @@
         <nav>
             <ul>
                 <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
-                <li><a routerLink="/volumes" routerLinkActive="active">Volumes</a></li>
+                <li><a routerLink="/chapters" routerLinkActive="active">Chapters</a></li>
                 <li><a routerLink="/characters" routerLinkActive="active">Characters</a></li>
                 <li><a routerLink="/about" routerLinkActive="active">About</a></li>
             </ul>
         </nav>
+        <button class="icon" (click)="showDetails()">&#9776;</button>
+        <ng-container *ngIf="isShow">
+            <div class="mobile">
+                <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+                <a routerLink="/chapters" routerLinkActive="active">Chapters</a>
+                <a routerLink="/characters" routerLinkActive="active">Characters</a>
+                <a routerLink="/about" routerLinkActive="active">About</a>
+            </div>
+        </ng-container>
     </div>
 </header>
