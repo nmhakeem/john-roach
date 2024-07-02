@@ -18,14 +18,15 @@
     margin: 0;
     cursor: pointer;
     &:hover{
-        //background: #fafafa;
-        /*-webkit-filter: brightness(95%);
+        background: #fafafa;
+        color: black;
+        -webkit-filter: brightness(95%);
         -webkit-transition: all 1s ease;
         -moz-transition: all 1s ease;
         -o-transition: all 1s ease;
         -ms-transition: all 1s ease;
-        transition: all 1s ease;*/
-        //box-shadow: 0px 2px 5px 1px rgba($color: black, $alpha: .2);
+        transition: all 1s ease;
+        box-shadow: 0px 2px 5px 1px rgba($color: black, $alpha: .2);
     }
 }
 

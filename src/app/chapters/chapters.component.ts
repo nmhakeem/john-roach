@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-chapters',
@@ -8,28 +9,16 @@ import { Component, OnInit } from '@angular/core';
 export class ChaptersComponent implements OnInit {
 
   description = "Here you can catch up with John Roach and his latest adventures! Be sure to check back for new pages to drop!";
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
+    this.http.get('assets/data-files/chapter-test.json').subscribe((data:any) => {
+      this.chapters = data;
+      console.log(data);
+    });
   }
-  
-  chapters = [
-    {
-        "chapterNumber": 1,
-        "title": "Pilot",
-        "description": "John Roach appears in the EntoVerse! How will he measure up to this world?"
-    },
-    {
-        "chapterNumber": 2,
-        "title": "Danger Ahead!",
-        "description": "With newfound trust of the locals, John Roach faces a threat head on!"
-    },
-    {
-        "chapterNumber": 3,
-        "title": "The Scarab King",
-        "description": "A new foe rallies against John Roach, can he thwart them?"
-    }
-  ];
+
+  chapters: any;
 
   showChapter(chapterNumber: any){
     console.log("chapter is opening");
