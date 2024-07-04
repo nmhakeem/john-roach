@@ -1,1 +1,20 @@
-<p>characters works!</p>
+<div class="heading">
+    <h1>Meet the Critters!</h1>
+    <div class="description">
+        <p>{{description}}</p>
+    </div>
+</div>
+<div class="card-section">
+    <div *ngFor="let character of characters" class="char-card" (click)="showCharacter(character)">
+        <div class="char-img">
+          <img [src]="'assets/icon/' + character.icon" class="welcome-img">
+        </div>
+        <div class="char-detail">
+          <h2 class="char-name">{{ character.name }}</h2>
+          <p class="char-species">{{ character.species }}</p>
+          <p class="char-abilities">{{ character.abilities }}</p>
+        </div>
+    </div>
+    
+      <app-modal-character [character]="selectedCharacter"></app-modal-character>
+</div>

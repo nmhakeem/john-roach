@@ -9,6 +9,7 @@ import { ChaptersComponent } from './chapters/chapters.component';
 import { CharactersComponent } from './characters/characters.component';
 import { AboutComponent } from './about/about.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ModalCharacterComponent } from './modal-character/modal-character.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     ChaptersComponent,
     CharactersComponent,
-    AboutComponent
+    AboutComponent,
+    ModalCharacterComponent
   ],
   imports: [
     BrowserModule,
