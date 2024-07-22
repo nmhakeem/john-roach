@@ -4,7 +4,7 @@
         "abilities": "Surviveability",
         "description": "John Roach appears in the EntoVerse! How will he measure up to this world?",
         "species": "Common Cockroach",
-        "icon": "JR Game Cover.png",
+        "icon": "JR GameCover.png",
         "forms": {
             "name": "default",
             "image": "detail-img.jpg"
@@ -13,9 +13,9 @@
     {
         "name": "Luke Springer",
         "abilities": "Superior Jumping, Camoflague, Concussive Sound",
-        "description": "As a grasshopper with great resolve, Luke usually keeps to himself but can enjoy the company of similar-minded people. ",
+        "description": "As a grasshopper with great resolve, Luke usually keeps to himself but can ejoy the company of similar-minded people. ",
         "species": "Grasshopper",
-        "icon": "JR Game Cover.png",
+        "icon": "JR GameCover.png",
         "forms": {
             "name": "default",
             "image": "detail-img.jpg"
@@ -26,7 +26,7 @@
         "abilities": "Flight, Pollen Cultivation, Honey Forging, Stinger Blasts",
         "description": "Very goal-oriented, she tends to overbook and put other's needs before herself. While this is a noble trait, she struggles with balancing and can be very one track minded. Coming from the Apis hive, she is a powerful insect which allows her to have the task of pollen collector",
         "species": "Honey Bee",
-        "icon": "JR Game Cover.png",
+        "icon": "JR GameCover.png",
         "forms": {
             "name": "default",
             "image": "detail-img.jpg"
