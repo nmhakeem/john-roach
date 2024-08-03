@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/john-roach-site",
+    "public": "dist/john-roach-site/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
