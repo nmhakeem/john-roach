@@ -4,7 +4,7 @@
         "abilities": "Surviveability",
         "description": "John Roach appears in the EntoVerse! How will he measure up to this world?",
         "species": "Common Cockroach",
-        "icon": "JR Game Cover.png",
+        "icon": "char_john_1.jpg",
         "forms": {
             "name": "default",
             "image": "detail-img.jpg"
@@ -15,7 +15,7 @@
         "abilities": "Superior Jumping, Camoflague, Concussive Sound",
         "description": "As a grasshopper with great resolve, Luke usually keeps to himself but can ejoy the company of similar-minded people. ",
         "species": "Grasshopper",
-        "icon": "JR Game Cover.png",
+        "icon": "char_luke_1.jpg",
         "forms": {
             "name": "default",
             "image": "detail-img.jpg"
@@ -24,12 +24,24 @@
     {
         "name": "Ayanna Apis",
         "abilities": "Flight, Pollen Cultivation, Honey Forging, Stinger Blasts",
-        "description": "Very goal-oriented, she tends to overbook and put other's needs before herself. While this is a noble trait, she struggles with balancing and can be very one track minded. Coming from the Apis hive, she is a powerful insect which allows her to have the task of pollen collector",
+        "description": "Very goal-oriented, she tends to overbook and put other's needs before herself. While this is a noble trait, she struggles with balancing and can be very one-track minded. Coming from the Apis hive, she is a powerful insect which allows her to have the task of pollen collector",
         "species": "Honey Bee",
-        "icon": "JR Game Cover.png",
+        "icon": "char_ayanna_1.jpg",
+        "forms": {
+            "name": "default",
+            "image": "detail-img.jpg"
+        }
+    },
+    {
+        "name": "Byrok the Brash Beetle",
+        "abilities": "Durable Armor, Supreme Strength",
+        "description": "The General of the guards in Critterton, he believes that strength measure the value of a bug.",
+        "species": "Rhinocerous Beetle",
+        "icon": "char_byrok_1.jpg",
         "forms": {
             "name": "default",
             "image": "detail-img.jpg"
         }
     }
+
 ]
