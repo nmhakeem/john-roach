@@ -100,7 +100,12 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "*.mov",
+                "input": "src/assets/videos/",
+                "output": "/assets/videos/"
+              }
             ],
             "styles": [
               "src/styles.scss"
