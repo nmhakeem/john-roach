@@ -4,11 +4,13 @@ import { AboutComponent } from './about/about.component';
 import { CharactersComponent } from './characters/characters.component';
 import { HomeComponent } from './home/home.component';
 import { ChaptersComponent } from './chapters/chapters.component';
+import { GameComponent } from './game/game.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, data: {title: "John Roach - Home"}},
   { path: 'characters', component: CharactersComponent, data: {title: "John Roach - Characters"}},
   { path: 'chapters', component: ChaptersComponent, data: {title: "John Roach - Chapters"}},
+  { path: 'game', component: GameComponent, data: {title: "John Roach - Game"}},
   { path: 'about', component: AboutComponent, data: {title: "John Roach - About"}}
 ];
 
