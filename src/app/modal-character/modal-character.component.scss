@@ -1,73 +1,89 @@
 .modal {
-    display: flex;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
-    justify-content: center;
-    align-items: center;
-  }
-  
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  display: flex;
+  flex-direction: row; /* Default is side by side */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-gallery {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.image-gallery img {
+  max-width: 300px;
+  border-radius: 15px;
+}
+
+.image-gallery button {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.modal-right {
+  flex: 1;
+  padding-left: 20px;
+}
+
+/* Media Query for Mobile: Stacks the text under the image */
+@media (max-width: 960px) {
   .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .modal-left {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .image-gallery {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  .image-gallery img {
-    max-width: 300px;
-    border-radius: 15px;
-  }
-  
-  .image-gallery button {
-    background: none;
-    border: none;
-    color: #333;
-    font-size: 2em;
-    cursor: pointer;
-  }
-  
-  .modal-right {
-    flex: 1;
-    padding-left: 20px;
+      flex-direction: column; /* Stack image and text vertically */
   }
 
-  .modal-character{
-    border: solid black 1px;
+  .modal-left {
+      margin-bottom: 20px; /* Add spacing between image and text */
   }
+
+  .modal-right {
+      padding-left: 0; /* Remove padding for a clean mobile look */
+      text-align: left; /* Center text under the image */
+  }
+
+  .image-gallery img {
+      max-width: 90%; /* Allow the image to take up more width on mobile */
+      margin: 0 auto; /* Center the image */
+  }
+}
