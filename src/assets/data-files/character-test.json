@@ -5,21 +5,15 @@
         "description": "John Roach appears in the EntoVerse! How will he measure up to this world?",
         "species": "Common Cockroach",
         "icon": "char_john_1.jpg",
-        "forms": {
-            "name": "default",
-            "image": "detail-img.jpg"
-        }
+        "detailIcon": "char_john_2.png"
     },
     {
         "name": "Luke Springer",
         "abilities": "Superior Jumping, Camoflague, Concussive Sound",
-        "description": "As a grasshopper with great resolve, Luke usually keeps to himself but can ejoy the company of similar-minded people. ",
+        "description": "As a grasshopper with great resolve, Luke usually keeps to himself but can enjoy the company of similar-minded folk. ",
         "species": "Grasshopper",
         "icon": "char_luke_1.jpg",
-        "forms": {
-            "name": "default",
-            "image": "detail-img.jpg"
-        }
+        "detailIcon": "char_luke_2.png"
     },
     {
         "name": "Ayanna Apis",
@@ -27,10 +21,7 @@
         "description": "Very goal-oriented, she tends to overbook and put other's needs before herself. While this is a noble trait, she struggles with balancing and can be very one-track minded. Coming from the Apis hive, she is a powerful insect which allows her to have the task of pollen collector",
         "species": "Honey Bee",
         "icon": "char_ayanna_1.jpg",
-        "forms": {
-            "name": "default",
-            "image": "detail-img.jpg"
-        }
+        "detailIcon": "char_ayanna_2.png"
     },
     {
         "name": "Byrok the Brash Beetle",
@@ -38,10 +29,7 @@
         "description": "The General of the guards in Critterton, he believes that strength measure the value of a bug.",
         "species": "Rhinocerous Beetle",
         "icon": "char_byrok_1.jpg",
-        "forms": {
-            "name": "default",
-            "image": "detail-img.jpg"
-        }
+        "detailIcon": "char_byrok_2.png"
     }
 
 ]

@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+// modal-character.component.ts
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-modal-character',
@@ -6,22 +7,29 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./modal-character.component.scss']
 })
 export class ModalCharacterComponent {
-  @Input() character: any;
-  currentFormIndex: number = 0;
+
+  @Input() character: any;   // Receiving the selected character
+  currentForm: any;          // Form to show in the modal
+
+  @Output() closeModal = new EventEmitter<void>();  // Event to close the modal
+
+  ngOnInit(): void {
+    // Set the default form to display when the modal opens
+    if (this.character && this.character.forms) {
+      this.currentForm = this.character.forms[0];
+    }
+  }
 
   nextForm() {
-    if (this.character.forms && this.character.forms.length > 0) {
-      this.currentFormIndex = (this.currentFormIndex + 1) % this.character.forms.length;
-    }
+    // Logic to switch to the next form
   }
 
   prevForm() {
-    if (this.character.forms && this.character.forms.length > 0) {
-      this.currentFormIndex = (this.currentFormIndex - 1 + this.character.forms.length) % this.character.forms.length;
-    }
+    // Logic to switch to the previous form
   }
 
-  get currentForm() {
-    return this.character.forms[this.currentFormIndex];
+  // Close the modal
+  close() {
+    this.closeModal.emit();
   }
 }

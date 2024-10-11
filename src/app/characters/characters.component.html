@@ -15,8 +15,9 @@
           <p class="char-abilities">{{ character.abilities }}</p>
         </div>
     </div>
-    
-      <app-modal-character [character]="selectedCharacter"></app-modal-character>
+
+    <!-- Pass the selectedCharacter to the modal via Input binding -->
+    <app-modal-character *ngIf="selectedCharacter" [character]="selectedCharacter" (closeModal)="selectedCharacter = null"></app-modal-character>
 </div>
 
 <div class="center-horizontally">
