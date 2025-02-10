@@ -22,6 +22,30 @@
   <img src="assets/icon/comic_coming_soon.jpg" class="coming-soon">
 </div>
 
+<div class="card-section">
+  <div *ngFor="let chapter of chapters" class="chap-card" (click)="showChapter(chapter)">
+      <div class="chap-img">
+        <img [src]="'assets/icon/' + chapter.icon" class="chapter-img">
+      </div>
+      <div class="chap-detail">
+        <h2 class="chap-name">{{ chapter.title }}</h2>
+        <p class="chap-desc">{{ chapter.description }}</p>
+      </div>
+  </div>
+
+  <!-- Pass the selectedchapter to the modal via Input binding -->
+  <!--<app-modal-chapter *ngIf="selectedChapter" [chapter]="selectedChapter" (closeModal)="selectedChapter = null"></app-modal-chapter>-->
+</div>
+
+<div *ngIf="selectedChapter">
+  <h1>{{selectedChapter.title}}</h1>
+  <p>{{selectedChapter.description}}</p>
+  <div *ngFor="let page of selectedChapter.pages" class="stack">
+    <h2>{{page.title}}</h2>
+    <img src="assets/comic/{{page.source}}">
+  </div>
+</div>
+
 <div class="center-horizontally">
   <div id="mc_embed_shell">
     <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
@@ -60,13 +84,3 @@
 <!--When grtting the images fro mthe chapters, they could be in a json file that tells it which type of penl it is (image or video or splash) which could
 then have its own class, but it allows for the video to be imbedded into the page and flow seamlessly!!! Also
 have each chapter object's be numbered so that the code knows which one goes next-->
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <p>Some text in the Modal..</p>
-    </div>
-  
-  </div>

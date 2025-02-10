@@ -27,7 +27,8 @@ import { environment } from '../environments/environment';
         ModalCharacterComponent
     ],
     bootstrap: [AppComponent], 
-    imports: [BrowserModule,
+    imports: [
+        BrowserModule,
         AppRoutingModule,
         AngularFireModule.initializeApp(environment.firebaseConfig),
         AngularFireStorageModule], 

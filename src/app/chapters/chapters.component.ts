@@ -12,16 +12,19 @@ export class ChaptersComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.http.get('assets/data-files/chapter-test.json').subscribe((data:any) => {
+    this.http.get('assets/data-files/chapters.json').subscribe((data:any) => {
       this.chapters = data;
       console.log(data);
     });
   }
 
   chapters: any;
+  selectedChapter: any;
 
-  showChapter(chapterNumber: any){
+  showChapter(chapter: any){
     console.log("chapter is opening");
+    console.log(chapter);
+    this.selectedChapter = chapter;
   }
 
 }
