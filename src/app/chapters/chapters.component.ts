@@ -27,4 +27,14 @@ export class ChaptersComponent implements OnInit {
     this.selectedChapter = chapter;
   }
 
+  openModal(chapter: any) {
+    this.selectedChapter = chapter;
+    document.body.classList.add('modal-open');
+  }
+
+  closeModal() {
+    this.selectedChapter = null;
+    document.body.classList.remove('modal-open');
+  }
+
 }

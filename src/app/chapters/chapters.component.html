@@ -24,8 +24,8 @@
 
 <div class="card-section">
   <div *ngFor="let chapter of chapters" class="chap-card" (click)="showChapter(chapter)">
-      <div class="chap-img">
-        <img [src]="'assets/icon/' + chapter.icon" class="chapter-img">
+      <div class="chap-icon">
+        <img [src]="'assets/icon/' + chapter.icon" class="chapter-icon">
       </div>
       <div class="chap-detail">
         <h2 class="chap-name">{{ chapter.title }}</h2>
@@ -37,12 +37,12 @@
   <!--<app-modal-chapter *ngIf="selectedChapter" [chapter]="selectedChapter" (closeModal)="selectedChapter = null"></app-modal-chapter>-->
 </div>
 
-<div *ngIf="selectedChapter">
-  <h1>{{selectedChapter.title}}</h1>
-  <p>{{selectedChapter.description}}</p>
-  <div *ngFor="let page of selectedChapter.pages" class="stack">
-    <h2>{{page.title}}</h2>
-    <img src="assets/comic/{{page.source}}">
+<div class="modal" *ngIf="selectedChapter">
+  <div class="modal-content">
+    <button class="close-btn" (click)="closeModal()">✖</button>
+    <div *ngFor="let page of selectedChapter.pages" class="chap-page">
+      <img src="assets/comic/{{page.source}}" class="chap-img">
+    </div>
   </div>
 </div>
 
