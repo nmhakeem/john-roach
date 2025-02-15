@@ -1,0 +1,46 @@
+[
+    {
+        "chapterNumber": 1,
+        "title": "Molting Point",
+        "description": "A disturbance in the EntoVerse causes John Roach to investigate!",
+        "icon": "JR Game Cover.png",
+        "pages": [
+            {
+                "pageNumber": 1,
+                "title": "Page 1",
+                "source": "img/comic/test/Molting_Point_1.jpg",
+                "type": "img"
+            },
+            {
+                "pageNumber": 2,
+                "title": "Page 2",
+                "source": "img/comic/test/Molting_Point_2.jpg",
+                "type": "img"
+            },
+            {
+                "pageNumber": 3,
+                "title": "Page 3",
+                "source": "img/comic/test/Molting_Point_3.jpg",
+                "type": "img"
+            },
+            {
+                "pageNumber": 4,
+                "title": "Page 4",
+                "source": "img/comic/test/Molting_Point_4.jpg",
+                "type": "img"
+            },
+            {
+                "pageNumber": 5,
+                "title": "Page 5",
+                "source": "img/comic/test/Molting_Point_5.jpg",
+                "type": "img"
+            },
+            {
+                "pageNumber": 6,
+                "title": "Page 6",
+                "source": "img/comic/test/Molting_Point_6.jpg",
+                "type": "img"
+            }
+        ]
+    }
+]
