@@ -116,9 +116,12 @@
 			<img src="assets/icon/Pose_John_Roach.png" class="welcome-img">
 		</div>
 	</div>
+
+	<button class="new-chapter" (click)="openLatestChapter()">L A T E S T  &nbsp;  C H A P T E R</button>
+
 	<div class="video-container">
 		<p class="welcome-video-title">Fully Animated Intro!</p>
-		<video controls poster="assets/icon/intro-thumbnail.png" *ngIf="safeIntroUrl">
+		<video controls poster="assets/icon/intro-thumbnail.jpg" *ngIf="safeIntroUrl">
 		  <source [src]="safeIntroUrl" type="video/mp4">
 		  Your browser does not support the video tag.
 		</video>

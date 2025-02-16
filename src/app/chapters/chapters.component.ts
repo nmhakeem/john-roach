@@ -61,4 +61,9 @@ export class ChaptersComponent implements OnInit {
     console.log("closing modal");
   }
 
+  openChapterByIndex(index: number): void {
+    console.log("opening chapter by index");
+    this.showChapter(this.chapters[index]);
+  }
+
 }

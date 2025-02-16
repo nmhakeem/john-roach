@@ -58,7 +58,33 @@ body {
   border: 1px solid black;
 } 
 
+.new-chapter{
+  background-color: var(--yellow);
+  border: solid black 1px;
+  width: 30%;
+  height: 75px;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  font: 20px black, sans-serif;
+  &:hover{
+    background-color: black;
+    color: var(--yellow);
+    border-color: var(--yellow);
+  }
+}
+
 @media (max-width: 960px) {
+
+  .new-chapter{
+    width: 75%;
+    height: 100px;
+    border-radius: 10px;
+    border: 2px solid black;
+    font: 30px black, sans-serif;
+  }
 
   .welcome-block{
     flex-direction: column;
