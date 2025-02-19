@@ -47,7 +47,11 @@
         <img [src]="page.safeUrl" alt="{{ page.title }}" class="chap-img">
       </ng-container>
       <ng-container *ngIf="page.type === 'video'">
-        <video [src]="page.safeUrl" muted autoplay loop class="chap-video"></video>
+        <video [src]="page.safeUrl" 
+          muted autoplay loop 
+          class="chap-video" 
+          type="video/webm">
+        </video>
       </ng-container>
     </div>
   </div>
