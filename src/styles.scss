@@ -81,6 +81,16 @@ section {
     }
 }
 
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box; /* For older browsers */
+    -webkit-line-clamp: 3; /* Limit to 2 lines */
+    -webkit-box-orient: vertical; /* For vertical truncation */
+    line-clamp: 3; /* For newer browsers */
+    box-orient: vertical; /* For vertical truncation */
+}
+
 .center-horizontally {
     display: flex;
     justify-content: center; /* Centers horizontally */

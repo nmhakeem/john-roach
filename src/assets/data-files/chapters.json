@@ -4,6 +4,7 @@
         "title": "Molting Point",
         "description": "A disturbance in the EntoVerse causes John Roach to investigate!",
         "icon": "JR Game Cover.png",
+        "date": "2025-02-01",
         "pages": [
             {
                 "pageNumber": 1,
@@ -38,8 +39,8 @@
             {
                 "pageNumber": 6,
                 "title": "Page 6",
-                "source": "img/comic/test/Molting_Point_6.jpg",
-                "type": "img"
+                "source": "img/comic/test/Molting_Point_Animation.mp4",
+                "type": "video"
             }
         ]
     }

@@ -1,0 +1,16 @@
+<p>modal-chapter works!</p>
+<div class="modal" *ngIf="selectedChapter">
+    <div class="modal-content">
+      <h1 style="margin: 0;">{{selectedChapter.title}}</h1>
+      <p>{{selectedChapter.description}}</p>
+      <button class="close-btn" (click)="closeModal()">✖</button>
+      <div *ngFor="let page of selectedChapter.pages" class="chap-page">
+        <ng-container *ngIf="page.type === 'img'">
+          <img [src]="page.safeUrl" alt="{{ page.title }}" class="chap-img">
+        </ng-container>
+        <ng-container *ngIf="page.type === 'video'">
+          <video [src]="page.safeUrl" muted autoplay loop class="chap-video"></video>
+        </ng-container>
+      </div>
+    </div>
+  </div>
